@@ -8,9 +8,9 @@ $(document).ready(function () {
         /* get the action attribute from the <form action=""> element */
         var $form = $(this),
             url = $form.attr('action');
-        var parameters = { name: $('#Name').val(), subject: $('#Subject').val(), email: $('#Email').val(), message: $('#Message').val(), telephone: $('#Telephone').val() };
+        var parameters = { name: $('#Name').val(), subject: $('#Subject').val(), email: $('#Email').val(), message: $('#Message').val(), telephone: $('#Telephone').val(), mailSubject: "Request from Good Night Interiors", toMail: "goodnightmosquito@gmail.com"};
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbxrcGdPjBezMh3x69vM1vx70SoLfs81lHYeG2hla2o-kF854_c/exec",
+            url: "https://script.google.com/macros/s/AKfycbxdQUSLUHH1g9V3qlYqzd3ZPCBXjIIkD_QOqAsNOEsyLNWRADXI/exec",
             method: "POST",
             data: parameters
         })
