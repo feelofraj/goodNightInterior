@@ -1,4 +1,27 @@
 .service
 {
-    
+    padding:5%;
+}
+#serviceImg
+{
+    padding:5%;  
+}
+/* #myCarousel
+{
+    width: 400px;
+    height: 500px;
+} */
+#serviceTitle
+{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: x-large;
+color: black;
+
+}
+#serviceContent
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: black;
+
 }
