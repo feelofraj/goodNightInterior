@@ -24,4 +24,7 @@ color: black;
     font-size: large;
     color: black;
 
+#fooLi{
+    float: left;
+    padding-right: 25px;
 }

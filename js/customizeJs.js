@@ -25,6 +25,9 @@ $(document).ready(function () {
                 $('#error-msg').css('color', 'red');
                 $('#error-msg').html('Falied: Please try again later or contact us.');
             });
+            setTimeout(function(){
+				location.reload();
+		},10000);
 
     });
 });
