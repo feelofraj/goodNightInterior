@@ -1,21 +1,14 @@
 .service
 {
-    padding:5%;
+    padding:0.3%;
+
 }
-#serviceImg
-{
-    padding:5%;  
-}
-/* #myCarousel
-{
-    width: 400px;
-    height: 500px;
-} */
 #serviceTitle
 {
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: x-large;
 color: black;
+padding: 5%;
 
 }
 #serviceContent
@@ -23,8 +16,61 @@ color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
     color: black;
-
-#fooLi{
+}
+#fooLi
+{
     float: left;
     padding-right: 25px;
 }
+p#serviceControl
+{
+    text-align:center;
+   
+  }
+ 
+  #serviceControl span
+  {
+       cursor:pointer;
+    color: black;
+    
+    border-bottom-color: rgb(224, 16, 16);
+   
+  }
+/* .btn:active,.btn:focus {
+    background-color: rgb(24, 148, 86);
+   
+  } */
+ #serviceType
+ {
+     padding: 2%;
+ }
+  #serviceImage{
+    position:relative;
+    height:281px;
+    width:400px;
+    margin-left: 20%;
+    
+    /* margin:0 auto 10px; */
+  }
+  /* #serviceImage img
+   {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  
+  #serviceImage img.opaque
+  {
+    opacity:1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=1);
+  } */
+  #slideshow  div { 
+    position: absolute; 
+  }
