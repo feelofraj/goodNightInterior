@@ -19,7 +19,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 </head>
 
-<body onload="loadFunction()">
+<body>
 		<div id="loader" class="lds-css ng-scope" >
 			<div style="width:100%;height:100%" class="lds-ripple" >
 				
@@ -108,15 +108,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h4>Contact Form</h4>
 				<form method="POST" id="sendMail">
 					<div class="col-md-6 wthree_contact_left_grid">
-						<input type="text" name="Name" id="Name" placeholder="Name" required="">
+						<input type="text" name="Name" id="Name" placeholder="Name*" required="">
 						<input type="email" name="Email" id="Email" placeholder="Email">
 					</div>
 					<div class="col-md-6 wthree_contact_left_grid">
-						<input type="text" name="Telephone" id="Telephone" placeholder="Telephone" required="">
-						<input type="text" name="Subject" id="Subject" placeholder="Subject" required="">
+						<input type="text" name="Telephone" id="Telephone" placeholder="Telephone*" required="">
+						<input type="text" name="Subject" id="Subject" placeholder="Subject*" required="">
 					</div>
 					<div class="clearfix"> </div>
-					<textarea name="Message" id="Message" placeholder="Message..." required=""></textarea>
+					<textarea name="Message" id="Message" placeholder="Message*" required=""></textarea>
 					<p id="error-msg"></p>
 					<input type="submit" value="Submit">
 					<input type="reset" value="Clear">
@@ -183,22 +183,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- js -->
+	<div id="feedback">
+			<a id="popupClick" href="#popup1">Quick Enquiry</a>
+		</div>
+
+
+	<div id="popup1" class="overlay">
+		<div class="popup">
+			<div class="div1" style="background:#fff">
+				
+				<div class="content" id="quickenquire">
+					<h3 style="text-align:center">Send Enquiry<a class="close" href="#">×</a></h3>
+					<form action="#" id="enquiryMail">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" required>
+						<label for="email">Email Id</label>
+						<input type="email" id="email" name="email" required>
+						<label for="comment">Your Message</label>
+						<textarea name="message" id="message" placeholder="Message..." required></textarea>
+						<label for="contact">Contact No</label>
+						<input type="text" id="contact" name="contact" required>
+						<p id="enquiry-error-msg"></p>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+
+</div>
+
 </div>	
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript" src="js/customizeJs.js"></script>
 	<script type="text/javascript">
-	var myvar;
-		function loadFunction() {
-			myvar = setTimeout(showPage, 4000);
-		}
+			jQuery(document).ready(function ($) {
 
-		function showPage() {
-			document.getElementById("loader").style.display = "none";
-			document.getElementById("loadContent").style.display = "block";
-		}
-		jQuery(document).ready(function ($) {
+		
 			$(".scroll").click(function (event) {
 				event.preventDefault();
 				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
@@ -208,17 +232,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function () {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("loadContent").style.display = "block";
 			$().UItoTop({ easingType: 'easeOutQuart' });
-
+			var i = 0;
+function change() {
+  var doc = document.getElementById("popupClick");
+  var color = ["#c8d1ca", "#cecace"];
+  doc.style.backgroundColor = color[i];
+  i = (i + 1) % color.length;
+}
+setInterval(change, 1000);
 		});
 	</script>
 	<!-- //here ends scrolling icon -->
