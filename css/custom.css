@@ -1,3 +1,18 @@
+/* #loadContent
+{
+  display: none;
+} */
+/* @import url(https://fonts.googleapis.com/css?family=Droid+Sans); */
+#loader {
+  display:none;
+	/* position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif?e44397') 50% 50% no-repeat rgb(249,249,249); */
+}
 .service
 {
     padding:0.3%;
@@ -92,42 +107,7 @@ p#serviceControl
   #slideshow  div { 
     position: absolute; 
   }
-  @keyframes lds-double-ring {
-    0% {
-      top: 96px;
-      left: 96px;
-      width: 0;
-      height: 0;
-      opacity: 1;
-    }
-    100% {
-      top: 18px;
-    left: 18px;
-    width: 156px;
-    height: 156px;
-    opacity: 0;
-  }
-}
-@-webkit-keyframes lds-ripple {
-  0% {
-    top: 96px;
-    left: 96px;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-  100% {
-    top: 18px;
-    left: 18px;
-    width: 156px;
-    height: 156px;
-    opacity: 0;
-  }
-}
-#loader
-{
-
-}
+ 
 .lds-ripple {
   position: relative;
 }
@@ -141,6 +121,39 @@ p#serviceControl
   -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
   animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
+@keyframes lds-ripple {
+  0% {
+    top: 96px;
+    left: 96px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 18px;
+  left: 18px;
+  width: 156px;
+  height: 156px;
+  opacity: 0;
+}
+}
+@-webkit-keyframes lds-ripple {
+0% {
+  top: 96px;
+  left: 96px;
+  width: 0;
+  height: 0;
+  opacity: 1;
+}
+100% {
+  top: 18px;
+  left: 18px;
+  width: 156px;
+  height: 156px;
+  opacity: 0;
+}
+}
+
 .lds-ripple img{
   width:100px;
   height: 100px;
@@ -356,13 +369,4 @@ p#serviceControl
 #quickenquire  input[type=submit]:hover {
     background-color: #000000;
 }
-  /* @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
-.loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url('http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif?e44397') 50% 50% no-repeat rgb(249,249,249);
-} */
+

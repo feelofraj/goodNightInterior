@@ -3,24 +3,35 @@
 
 <head>
 	<title>Goodnight Interiors</title>
-	<link rel="icon" href="images/fav.png"/>
+	<link rel="icon" href="images/fav.png" />
 	<!-- for-meta-tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="goodnight interiors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- //for-meta-tags -->
 	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<script type="text/javascript" src="js/customizeJs.js"></script>
+
 	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
 </head>
 
 <body>
+		<div id="loader" class="lds-css ng-scope">
+				<div style="width:100%;height:100%" class="lds-ripple">
+		
+					<div></div>
+		
+					<div></div>
+		
+				</div>
+			</div>
+			<div id="loadContent">
 	<!-- header -->
 	<div class="header" id="home">
 		<div class="container">
@@ -30,12 +41,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><span class="fa fa-envelope-o" aria-hidden="true"></span><a href="mailto:goodnightmosquito@gmail.com">goodnightmosquito@gmail.com</a></li>
 				</ul>
 			</div>
-			
+
 			<div class="clearfix"> </div>
 
 		</div>
 	</div>
-	<div class="logo_nav  fixed-top">
+	<div class="logo_nav" id="myheader">
 		<div class="container ">
 			<nav class="navbar navbar-default">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -101,7 +112,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="w3l_services_grid1">
 						<span class="fa fa-building-o" aria-hidden="true"></span>
 						<h4><a href="#upvcDoor">upvc doors</a></h4>
-						<p>Customized design to give it a truly modern	look.</p>
+						<p>Customized design to give it a truly modern look.</p>
 					</div>
 				</div>
 				<div class="col-md-4 w3l_services_grid">
@@ -136,7 +147,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>Lovely natural look to the kitchen due to the textures and grains.</p>
 					</div>
 				</div>
-			
+
 			</div>
 		</div>
 	</div>
@@ -575,7 +586,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="social-bar" id="device">
 		<ul id="deviceUL">
 			<li class="green"><a href="whatsapp://send?text=I am interested in your product. Call me.&phone=+917092511553"><img
-						id="whatsapp" src="images/whatsapp.png"></a></li>
+					 id="whatsapp" src="images/whatsapp.png"></a></li>
 			<li class="yellow"><a onclick="getMobileOperatingSystem(null)"><img id="sms" src="images/sms.png"></a></li>
 		</ul>
 	</div>
@@ -627,14 +638,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //footer -->
 	<div id="feedback">
-			<a id="popupClick" href="#popup1">Quick Enquiry</a>
-		</div>
-
-
+		<a id="popupClick" href="#popup1">Quick Enquiry</a>
+	</div>
 	<div id="popup1" class="overlay">
 		<div class="popup">
 			<div class="div1" style="background:#fff">
-				
+
 				<div class="content" id="quickenquire">
 					<h3 style="text-align:center">Send Enquiry<a class="close" href="#">×</a></h3>
 					<form action="#" id="enquiryMail">
@@ -655,32 +664,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-</div>
-
+	</div>
 	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			$().UItoTop({ easingType: 'easeOutQuart' });
-
-		});
-		addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar() { window.scrollTo(0, 1); }
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
-	</script>
+</div>
 	<!-- js -->
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript" src="js/demo.js"></script>
-	<script src="js/bootstrap.js"></script>
+	<script   type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script   type="text/javascript" src="js/move-top.js"></script>
+	<script   type="text/javascript" src="js/easing.js"></script>
+	<script  type="text/javascript" src="js/demo.js"></script>
+	<script   type="text/javascript" src="js/bootstrap.js"></script>
 
 </body>
 

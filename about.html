@@ -9,18 +9,26 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="goodnight interiors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- //for-meta-tags -->
 	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<script type="text/javascript" src="js/customizeJs.js"></script>
+
 	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 </head>
 
 <body>
+		<div id="loader" class="lds-css ng-scope">
+				<div style="width:100%;height:100%" class="lds-ripple">
+		
+					<div></div>
+		
+					<div></div>
+		
+				</div>
+			</div>
+			<div id="loadContent">
 	<!-- header -->
 	<div class="header" id="home">
 		<div class="container">
@@ -30,12 +38,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><span class="fa fa-envelope-o" aria-hidden="true"></span><a href="mailto:goodnightmosquito@gmail.com">goodnightmosquito@gmail.com</a></li>
 				</ul>
 			</div>
-			
+
 			<div class="clearfix"> </div>
 
 		</div>
 	</div>
-	<div class="logo_nav">
+	<div class="logo_nav" id="myheader">
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -139,7 +147,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="row"><span class="counter">24</span><span>hr</span></div>
 				<h3>Support</h3>
 			</div>
-			
+
 		</div>
 	</div>
 	<!-- //about-counter -->
@@ -159,7 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li>Best customer review for our work</li>
 						<li>Proper finishing of work on exact time</li>
 						<li>Pationate to fulfil customer need</li>
-						
+
 					</ol>
 				</div>
 				<div class="col-md-6 w3l_about_bottom_grid_right">
@@ -180,7 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="social-bar" id="device">
 		<ul id="deviceUL">
 			<li class="green"><a href="whatsapp://send?text=I am interested in your product. Call me.&phone=+917092511553"><img
-						id="whatsapp" src="images/whatsapp.png"></a></li>
+					 id="whatsapp" src="images/whatsapp.png"></a></li>
 			<li class="yellow"><a onclick="getMobileOperatingSystem(null)"><img id="sms" src="images/sms.png"></a></li>
 		</ul>
 	</div>
@@ -232,14 +240,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //footer -->
 	<div id="feedback">
-			<a id="popupClick" href="#popup1">Quick Enquiry</a>
-		</div>
+		<a id="popupClick" href="#popup1">Quick Enquiry</a>
+	</div>
 
 
 	<div id="popup1" class="overlay">
 		<div class="popup">
 			<div class="div1" style="background:#fff">
-				
+
 				<div class="content" id="quickenquire">
 					<h3 style="text-align:center">Send Enquiry<a class="close" href="#">×</a></h3>
 					<form action="#" id="enquiryMail">
@@ -260,67 +268,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-</div>
+	</div>
 
 	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
 	<!-- js -->
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="js/move-top.js"></script>
+	<script   type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script   type="text/javascript" src="js/move-top.js"></script>
+	<script   type="text/javascript" src="js/easing.js"></script>
+	<script   type="text/javascript" src="js/bars.js"></script>
+	<script   type="text/javascript" src="js/waypoints.min.js"></script>
+	<script   type="text/javascript" src="js/counterup.min.js"></script>
+	<script   type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
-	</script>
-	<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-
-			$().UItoTop({ easingType: 'easeOutQuart' });
-
-		});
-	</script>
-	<!-- //here ends scrolling icon -->
-	<script src="js/bars.js"></script>
-	<!-- Stats-Number-Scroller-Animation-JavaScript -->
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/counterup.min.js"></script>
-	<script>
-		jQuery(document).ready(function ($) {
-			$('.counter').counterUp({
-				delay: 10,
-				time: 1000
-			});
-		});
-	</script>
-	<!-- start-smoth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
-	</script>
-	<!-- start-smoth-scrolling -->
-	<!-- //Stats-Number-Scroller-Animation-JavaScript -->
-	<script type="text/javascript" src="js/demo.js"></script>
-	<!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
-	<!-- //for bootstrap working -->
+	<script  type="text/javascript" src="js/demo.js"></script>
+	<script   type="text/javascript" src="js/bootstrap.js"></script>
+	
 </body>
 
 </html>
