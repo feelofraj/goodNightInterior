@@ -280,7 +280,29 @@ $().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	}
 
-	
+
 });
 
+function popOpen()
+{
+	
+    document.getElementById("loadContent").classList.add("blur-filter");
+	
+	document.getElementById('popup1').style.display="block";
+}
+function popClose()
+{
+	
+	document.getElementById("loadContent").classList.remove("blur-filter");
+	
+	document.getElementById('popup1').style.display="none";
+}
+	
 
+window.onclick = function(event) {
+	var modal = document.getElementById('popup1');
+	
+  if (event.target == modal ) {
+    popClose();
+  }
+}

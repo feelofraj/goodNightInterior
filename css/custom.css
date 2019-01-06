@@ -171,13 +171,12 @@ p#serviceControl
 	right: 0;
 	background: rgba(0, 0, 0, 0.7);
 	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
+	display: none;
+	
 }
-.overlay:target {
-	visibility: visible;
-  opacity: 1;
-}
+/* .overlay:target {
+  display: block;
+ } */
 .popup {
 	margin: 30px auto;
 	padding: 15px;
@@ -185,7 +184,7 @@ p#serviceControl
 	width: 49%;
 	position: absolute;
   left: 35%;
-	/* transition: all 5s ease-in-out; */
+	transition: all 5s ease-in-out;
 }
 .popup h2 {
 	margin-top: 0;
@@ -291,7 +290,7 @@ p#serviceControl
 	position: fixed;
 	right: 0%;
 	top: 70%;
-
+cursor:pointer;
 	z-index: 1000;
 	transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
@@ -355,3 +354,10 @@ p#serviceControl
     background-color: #000000;
 }
 
+.blur-filter {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
