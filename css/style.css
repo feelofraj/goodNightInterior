@@ -36,23 +36,26 @@ input[type="submit"],.header_left ul li a,.agile_back_home a,.agileits_social h5
 }
 .w3l_header_left{
 	float:left;
+	margin-left:0;
 }
 .w3l_header_left ul{
 	padding: 0em 0 0 1.5em;
-    /* border-left: 1px solid #0e947a; */
+    border-left: 1px solid #2e2626;
 }
 .w3l_header_left ul li{
 	display: inline-block;
-    /* border-right: 1px solid #0e947a; */
+    border-right: 1px solid #090a0a;
     color: #fff;
     padding: 1em 1.5em 1em 0;
 	letter-spacing: 1px;
+	
 }
 .w3l_header_left ul li span{
     padding: 0em;
-    margin-right: 1em;
+    margin-right: .5em;
     /* border: 1px solid #ff4c4c; */
 	background: #1d1c1c;
+	font-size: 20px ;
 	color: #999;
 }
 /* .w3l_header_left ul li span:hover{
@@ -1395,7 +1398,7 @@ margin: 0.5em 0 0em;
 }
 .about_counter_left h3{
     color: #010c0a;
-    font-size: 2.1em;
+    font-size: 1.5em;
     margin: .5em 0 0;
     font-weight: 300;
     letter-spacing: 3px;

@@ -2,6 +2,7 @@ $(document).ready(function() {
 //Index Banner Jquery
 			// parameters
 			// image height
+		
 			var images_height = '650px';
 			// array of images
 			var images_url = [
@@ -131,8 +132,8 @@ $(document).ready(function() {
 //Common Page Load Script 
 	
 	//Preloader 
-	// document.getElementById("loader").style.display = "none" ;
-	// document.getElementById("loadContent").style.display = "block" ;
+	document.getElementById("loader").style.display = "none" ;
+	document.getElementById("loadContent").style.display = "block" ;
 	//Common script & Index 1
 addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar() { window.scrollTo(0, 1); }
@@ -168,7 +169,7 @@ $().UItoTop({ easingType: 'easeOutQuart' });
 //Counter In About Page
 
 	$('.counter').counterUp({
-		delay: 4,
+		delay: 1,
 		time: 1000
 	});
 
@@ -287,7 +288,7 @@ $().UItoTop({ easingType: 'easeOutQuart' });
         /* get the action attribute from the <form action=""> element */
         var $form = $(this),
             url = $form.attr('action');
-        var parameters = { name: $('#Name').val(), subject: $('#Subject').val(), email: $('#Email').val(), message: $('#Message').val(), telephone: $('#Telephone').val(), mailSubject: "Request from Good Night Interiors", toMail: "goodnightmosquito@gmail.com" };
+        var parameters = { name: $('#Name').val(), subject: $('#Subject').val(), email: $('#Email').val(), message: $('#Message').val(), telephone: $('#Telephone').val(), mailSubject: "Request from Good Night Interiors", toMail: "goodnightinteriors@gmail.com" };
         $.ajax({
             url: "https://script.google.com/macros/s/AKfycbxdQUSLUHH1g9V3qlYqzd3ZPCBXjIIkD_QOqAsNOEsyLNWRADXI/exec",
             method: "POST",
@@ -317,7 +318,7 @@ $().UItoTop({ easingType: 'easeOutQuart' });
         /* get the action attribute from the <form action=""> element */
         var $form = $(this),
             url = $form.attr('action');
-        var parameters = { name: $('#name').val(), email: $('#email').val(), message: $('#message').val(), telephone: $('#contact').val(), mailSubject: "Request from Good Night Interiors", toMail: "goodnightmosquito@gmail.com" };
+        var parameters = { name: $('#name').val(), email: $('#email').val(), message: $('#message').val(), telephone: $('#contact').val(), mailSubject: "Request from Good Night Interiors", toMail: "goodnightinteriors@gmail.com" };
         $.ajax({
             url: "https://script.google.com/macros/s/AKfycbxdQUSLUHH1g9V3qlYqzd3ZPCBXjIIkD_QOqAsNOEsyLNWRADXI/exec",
             method: "POST",
