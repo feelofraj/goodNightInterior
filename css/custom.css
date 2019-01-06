@@ -1,5 +1,9 @@
 #loadContent
 {
+  display: block;
+}
+#loader-container
+{
   display: none;
 }
 body { background: #222; }
@@ -172,7 +176,7 @@ p#serviceControl
 }
 .overlay:target {
 	visibility: visible;
-	opacity: 1;
+  opacity: 1;
 }
 .popup {
 	margin: 30px auto;
@@ -180,7 +184,7 @@ p#serviceControl
 	border-radius: 5px;
 	width: 49%;
 	position: absolute;
-	left: 35%;
+  left: 35%;
 	/* transition: all 5s ease-in-out; */
 }
 .popup h2 {

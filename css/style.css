@@ -556,7 +556,7 @@ input[type="submit"],.header_left ul li a,.agile_back_home a,.agileits_social h5
 	padding: 0 0 0 1em;
 }
 .wthree_more {
-    padding-left: 1em;
+	padding-left: 1em;
 }
 .wthree_more.wthree_more2 {
     padding: 0;
@@ -575,7 +575,7 @@ input[type="submit"],.header_left ul li a,.agile_back_home a,.agileits_social h5
     -webkit-backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     display: block;
-    background: #ff4c4c;
+	background: #ff4c4c;
 }
 /* Wayra */
 .button--wayra {
