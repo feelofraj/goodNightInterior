@@ -140,6 +140,10 @@ p#serviceControl
     
     /* margin:0 auto 10px; */
   }
+  #serviceType div
+  {
+    display:flex;
+  }
   /* #serviceImage img
    {
     position:absolute;
